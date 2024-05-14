@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Google Map Example</title>
+  <style>
+    /* Set the size of the map */
+    #map {
+      height: 400px; /* Adjust height as needed */
+      width: 400px; /* Make map take full width of its container */
+    }
+  </style>
+</head>
+<body>
+  <!-- Map container -->
+  <div id="map"></div>
+
+  <!-- Include the Google Maps JavaScript API -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBlVLASeYCNLF3Meu0Xn2iU4FcTNUo4iPA&callback=initMap" async defer></script>
+
+  <script>
+    // Initialize the map
+    function initMap() {
+      // Coordinates of the location
+    //   var myLatLng = {lat: 20.870593, lng: 74.768601};
+      var myLatLng = {lat: 18.5196, lng: 73.8554};
+
+      // Create a map centered at the coordinates
+      var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 15, // Adjust zoom level as needed
+        center: myLatLng
+      });
+
+      // Add a marker at the coordinates
+      var marker = new google.maps.Marker({
+        position: myLatLng,
+        map: map,
+        title: 'Attackers Location'
+      });
+    }
+  </script>
+</body>
+</html>

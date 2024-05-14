@@ -1,0 +1,497 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+.App {
+    text-align: center;
+}
+
+.App-logo {
+    height: 40vmin;
+    pointer-events: none;
+}
+
+.App-rl {
+    display: flex;
+    flex-direction: row;
+    margin-top: 2vh;
+    gap: 1vw;
+}
+
+.App-para {
+    font-size: medium;
+    padding-left: 20vw;
+    padding-right: 20vw;
+    margin-top: 2vh;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
+}
+
+.App-main {
+    background-color: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: rgb(0, 0, 0);
+}
+
+.App-link {
+    color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* Registration and Login Form */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+}
+
+.formbold-mb-3 {
+    margin-bottom: 15px;
+}
+
+.formbold-relative {
+    position: relative;
+}
+
+.formbold-opacity-0 {
+    opacity: 0;
+}
+
+.formbold-stroke-current {
+    stroke: currentColor;
+}
+
+#supportCheckbox:checked~div span {
+    opacity: 1;
+}
+
+.formbold-main-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 48px;
+}
+
+.formbold-form-wrapper {
+    margin: 0 auto;
+    max-width: 570px;
+    width: 100%;
+    background: white;
+    padding: 40px;
+}
+
+.formbold-img {
+    margin-bottom: 45px;
+}
+
+.formbold-form-title {
+    margin-bottom: 30px;
+}
+
+.formbold-form-title h2 {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 34px;
+    color: #000000;
+}
+
+.formbold-form-title p {
+    font-size: 16px;
+    line-height: 24px;
+    color: #536387;
+    margin-top: 12px;
+}
+
+.formbold-input-flex {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 15px;
+}
+
+.formbold-input-flex>div {
+    width: 50%;
+}
+
+.formbold-form-input {
+    text-align: center;
+    width: 100%;
+    padding: 13px 22px;
+    border-radius: 5px;
+    border: 1px solid #dde3ec;
+    background: #ffffff;
+    font-weight: 500;
+    font-size: 16px;
+    color: #536387;
+    outline: none;
+    resize: none;
+}
+
+.formbold-form-input:focus {
+    border-color: #000000;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
+}
+
+.formbold-form-label {
+    color: #536387;
+    font-size: 14px;
+    line-height: 24px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.formbold-checkbox-label {
+    display: flex;
+    cursor: pointer;
+    user-select: none;
+    font-size: 16px;
+    line-height: 24px;
+    color: #536387;
+}
+
+.formbold-checkbox-label a {
+    margin-left: 5px;
+    color: #6a64f1;
+}
+
+.formbold-input-checkbox {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+.formbold-checkbox-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    margin-right: 16px;
+    margin-top: 2px;
+    border: 0.7px solid #dde3ec;
+    border-radius: 3px;
+}
+
+.formbold-btn {
+    font-size: 16px;
+    border-radius: 5px;
+    padding: 14px 25px;
+    border: none;
+    font-weight: 500;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border-color: #000000;
+    border: 1px solid #000000;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+    margin-top: 25px;
+}
+
+.formbold-btn:hover {
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
+}
+
+.formbold-btn-d {
+    font-size: 16px;
+    border-radius: 5px;
+    padding: 14px 25px;
+    border: none;
+    font-weight: 500;
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    border: 1px solid #000000;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+    margin-top: 25px;
+}
+
+.formbold-btn-d:hover {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
+}
+
+
+/* Dashboard */
+
+.logo {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bolder;
+    font-size: 40px;
+    font-family: Agbalumo;
+}
+
+.header-main {
+    display: flex;
+    flex-direction: row;
+    gap: 45vw;
+}
+
+.header-logo {
+    margin-left: 7vw;
+    margin-top: 4vh;
+}
+
+.header-menu {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    margin-top: 7vh;
+}
+
+.header-menu-com {
+    text-decoration: none;
+    color: #000000;
+    font-weight: 500;
+    font-size: large;
+}
+
+.header-menu-com:hover {
+    /* text-decoration: underline; */
+    font-weight: bold;
+}
+
+.vertical-line {
+    border: 2px solid rgb(0, 0, 0);
+    height: 500px;
+    width: 3px;
+    border-radius: 40%;
+}
+
+.homepage {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10vh;
+}
+
+.profile-p1 {
+    width: 50vw;
+    padding-left: 13vw;
+}
+
+.profile-p2 {
+    width: 50vw;
+}
+
+.profile-p1-header {
+    font-size: 30px;
+    font-weight: bold;
+    padding-top: 4vh;
+    padding-left: 5vw;
+}
+
+#map {
+    margin-left: -100px;
+}
+
+.profile-p1-menu {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10vh;
+    gap: 3vh;
+}
+
+.profile-p1-com {
+    display: flex;
+    flex-direction: row;
+    font-family: Merriweather;
+    font-size: larger;
+}
+
+.com-title {
+    font-weight: bolder;
+}
+
+.com-ans {
+    margin-left: 10px;
+}
+
+.p1-button {
+    padding-left: 6vw;
+    margin-top: 3vh;
+}
+
+.p2-button {
+    padding-left: 8vw;
+    margin-top: 3vh;
+}
+
+.formbold-form-title-manually {
+    text-align: center;
+    font-size: large;
+    margin-bottom: 5vh;
+}
+
+.token-generator-btn {
+    text-align: center;
+}
+
+.token-generator-bottom-link {
+    text-align: center;
+    font-size: small;
+    margin-top: 3vh;
+    cursor: pointer;
+}
+.token-generator-bottom-link:hover {
+    text-decoration: underline;
+}
+
+.token-generator-bottom-link p {
+    color: #000000;
+}
+
+.token-history {
+    margin-top: 8vh;
+}
+
+.token-history-title {
+    text-align: center;
+    margin-bottom: 7vh;
+}
+
+.refresh {
+    position: absolute;
+    top: 20%;
+    right: 10%;
+}
+
+.refresh button {
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+    background-color: #fff;
+    border: 1px solid #000000;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+.refresh button:hover {
+    background-color: #000000;
+    border: 1px solid #000000;
+    color: #ffffff;
+}
+
+.refresh1 {
+    position: absolute;
+    top: 16%;
+    right: 10%;
+}
+
+.refresh1 button {
+    width: 100px;
+    height: 30px;
+    color: #ffffff;
+    background-color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 3px;
+    font-weight: bold;
+}
+.refresh2 {
+    position: absolute;
+    top: 24%;
+    right: 10%;
+}
+
+.refresh2 button {
+    width: 100px;
+    height: 30px;
+    color: #ffffff;
+    background-color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 3px;
+    font-weight: bold;
+}
+.refresh3 {
+    position: absolute;
+    top: 20%;
+    right: 16.5%;
+}
+
+.refresh3 button {
+    width: 100px;
+    height: 30px;
+    color: #ffffff;
+    background-color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 3px;
+    font-weight: bold;
+}
+.refresh4 {
+    position: absolute;
+    top: 20%;
+    right: 3.5%;
+}
+
+.refresh4 button {
+    width: 100px;
+    height: 30px;
+    color: #ffffff;
+    background-color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+
+.token-history-each {
+    display: flex;
+    flex-direction: row;
+    gap: 15vw;
+    justify-content: center;
+    margin-bottom: 3vh;
+    margin-top: 3vh;
+}
+
+.horizontal-line {
+    border: 2px solid rgb(0, 0, 0);
+    width: 90vw;
+    margin-left: 5vw;
+    height: 2px;
+    border-radius: 40%;
+}
+
+.token-history-details {
+    display: flex;
+    justify-content: center;
+}
+
+.token-history-detail-title {
+    text-align: center;
+    margin-bottom: 5vh;
+}
+
+.token-history-moreInfo p {
+    text-decoration: underline;
+    cursor: pointer;
+    color: #000000;
+}
